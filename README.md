@@ -1,13 +1,14 @@
-# zram
+# journald
+[![Build Status](https://travis-ci.org/cristifalcas/puppet-journald.png?branch=master)](https://travis-ci.org/cristifalcas/puppet-journald)
 
 #### Table of Contents
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with zram](#setup)
-    * [What zram affects](#what-zram-affects)
+3. [Setup - The basics of getting started with journald](#setup)
+    * [What journald affects](#what-journald-affects)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with zram](#beginning-with-zram)
+    * [Beginning with journald](#beginning-with-journald)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
@@ -31,7 +32,7 @@ management, etc.) this is the time to mention it.
 
 ## Setup
 
-### What zram affects
+### What journald affects
 
 * A list of files, packages, services, or operations that the module will alter,
   impact, or execute on the system it's installed on.
@@ -43,7 +44,7 @@ management, etc.) this is the time to mention it.
 If your module requires anything extra before setting up (pluginsync enabled,
 etc.), mention it here.
 
-### Beginning with zram
+### Beginning with journald
 
 The very basic steps needed for a user to get the module up and running.
 
