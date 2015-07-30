@@ -11,7 +11,7 @@ class journald::config {
     ensure => $journald_dir,
     force  => true,
     owner  => 0,
-    group  => 0,
+    group  => 'systemd-journal',
   }
 
   file { '/etc/systemd/journald.conf':
