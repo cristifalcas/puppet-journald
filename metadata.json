@@ -1,18 +1,19 @@
 {
-  "name": "cristifalcas-journald",
-  "author": "Cristian Falcas",
-  "version": "0.1.6",
-  "dependencies": [
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": "4.x"
-    }
-  ],
-  "license": "Apache-2.0",
-  "operatingsystem_support": [],
-  "project_page": "https://github.com/cristifalcas/puppet-journald",
-  "requirements": [],
-  "source": "git@github.com:cristifalcas/puppet-journald.git",
-  "summary": "Configures journald on el7",
-  "tags": []
+	"name": "cristifalcas-journald",
+	"author": "Cristian Falcas",
+	"version": "0.1.7",
+	"dependencies": [{
+			"name": "puppetlabs/stdlib",
+			"version_requirement": "4.x"
+		}
+	],
+	"license": "Apache-2.0",
+	"operatingsystem_support": [],
+	"source": "git@github.com:cristifalcas/puppet-journald.git",
+	"project_page": "https://github.com/cristifalcas/puppet-journald",
+	"issues_url": "https://github.com/cristifalcas/puppet-journald/issues",
+	"requirements": [],
+	"summary": "Configures journald on el7",
+	"tags": [ "journald"
+	]
 }
