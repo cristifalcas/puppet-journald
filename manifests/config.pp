@@ -15,7 +15,7 @@ class journald::config {
   }
 
   file { '/etc/systemd/journald.conf':
-    ensure  => present,
+    ensure  => 'file',
     owner   => 0,
     group   => 0,
     content => template("${module_name}/journald.conf.erb"),
