@@ -1,7 +1,7 @@
 {
 	"name": "cristifalcas-journald",
 	"author": "Cristian Falcas",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"dependencies": [{
 			"name": "puppetlabs/stdlib",
 			"version_requirement": "4.x"

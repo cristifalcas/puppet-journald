@@ -1,1 +1,1 @@
-include journald
+include ::journald
