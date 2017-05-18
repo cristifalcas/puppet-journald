@@ -1,5 +1,9 @@
 class journald::config {
-  $merged_options = merge($::journald::params::default_options, $::journald::options)
+  if $::journald::enable_defaults {
+    $merged_options = merge($::journald::params::default_options, $::journald::options)
+  } else {
+    $merged_options = $::journald::options
+  }
 
   if $::journald::persist_log {
     $journald_dir = 'directory'

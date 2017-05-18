@@ -1,5 +1,6 @@
 class journald::params {
   $persist_log = true
+  $enable_defaults = false
   $default_options = {
     'Storage'           => 'auto',
     'Compress'          => 'yes',

@@ -9,10 +9,13 @@
 #                                data persistent, it is sufficient to create /var/log/journal/ 
 #                                where systemd-journald will then store the data.
 #
+# $enable_defaults::             if defaults parameters should be used or not
+#
 # $options::                     a hash with journald parameters
 #
 class journald (
   $persist_log = $journald::params::persist_log,
+  $enable_defaults =  $journald::params::enable_defaults,
   $options = undef
 ) inherits journald::params {
   if $::osfamily == 'RedHat' and versioncmp($::operatingsystemrelease, '7.0') >= 0 {
