@@ -16,7 +16,7 @@
 class journald (
   $persist_log = $journald::params::persist_log,
   $enable_defaults =  $journald::params::enable_defaults,
-  $options = undef
+  $options = {},
 ) inherits journald::params {
   if $::osfamily == 'RedHat' and versioncmp($::operatingsystemrelease, '7.0') >= 0 {
     contain ::journald::config

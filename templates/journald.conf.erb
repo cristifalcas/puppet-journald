@@ -2,7 +2,7 @@
 # See journald.conf(5) for details
 
 [Journal]
-<%- scope.lookupvar('journald::config::merged_options').sort.each do |k, v| -%>
+<%- scope['journald::config::merged_options'].sort.each do |k, v| -%>
 <%- if v != :undef -%>
 <%= k %>=<%= v %>
 <%- end -%>

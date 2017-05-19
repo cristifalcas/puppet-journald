@@ -1,7 +1,7 @@
 {
 	"name": "cristifalcas-journald",
 	"author": "Cristian Falcas",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"source": "git@github.com:cristifalcas/puppet-journald.git",
 	"project_page": "https://github.com/cristifalcas/puppet-journald",
 	"issues_url": "https://github.com/cristifalcas/puppet-journald/issues",
