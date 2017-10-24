@@ -18,10 +18,13 @@ class journald::config {
     group  => 'systemd-journal',
   }
 
-  file { '/etc/systemd/journald.conf':
-    ensure  => 'file',
-    owner   => 0,
-    group   => 0,
-    content => template("${module_name}/journald.conf.erb"),
+  $defaults = {
+    'path'   => '/etc/systemd/journald.conf',
+    'notify' => Service['systemd-journald'],
   }
+
+  $ini_settings = {
+    'Journal' => $merged_options,
+  }
+  create_ini_settings($ini_settings, $defaults)
 }
