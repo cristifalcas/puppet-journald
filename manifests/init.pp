@@ -22,7 +22,6 @@ class journald (
   contain ::journald::config
   contain ::journald::service
 
-  Class['journald::config'] ~>
-  Class['journald::service']
+  Class['journald::config'] ~> Class['journald::service']
 
 }
