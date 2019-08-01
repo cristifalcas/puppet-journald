@@ -7,7 +7,7 @@
 	"issues_url": "https://github.com/cristifalcas/puppet-journald/issues",
 	"dependencies": [{
 			"name": "puppetlabs/stdlib",
-			"version_requirement": "4.x"
+			"version_requirement": ">= 4.0.0 < 7.0.0"
 		}
 	],
 	"license": "Apache-2.0",
