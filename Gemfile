@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'puppet', ENV.key?('PUPPET_VERSION') ? "#{ENV['PUPPET_VERSION']}" : '>= 2.7'
 
+gem 'augeas'
 gem 'rake'
 gem 'rspec'
 gem 'rspec-puppet'
