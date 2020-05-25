@@ -26,5 +26,5 @@ class journald::config {
   $ini_settings = {
     'Journal' => $merged_options,
   }
-  create_ini_settings($ini_settings, $defaults)
+  inifile::create_ini_settings($ini_settings, $defaults)
 }
